@@ -1,0 +1,104 @@
+.banners{
+  width: 100%;
+  height: 300rpx;
+  image{
+    width: 100%;
+    height: 300rpx;
+  }
+}
+
+
+.navContainer{
+  display: flex;
+  .navItem{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .iconfont{
+      width: 100rpx;
+      height: 100rpx;
+      font-size: 50rpx;
+      border-radius: 50%;
+      background: #d43c33;
+      color: #fff;
+      text-align: center;
+      line-height: 100rpx;
+      margin: 20rpx 0;
+    }
+    text{
+      font-size: 26rpx;
+    }
+  }
+}
+
+
+.recommendContainer{
+  padding: 20rpx;
+  
+
+// 推荐歌曲内容去
+  .recommendScroll{
+    display: flex;
+    height: 300rpx;
+    .recommendItem{
+      width:200rpx ;
+      margin-right: 20rpx;
+      image{
+        width: 200rpx;
+        height: 200rpx;
+        border-radius: 15rpx;
+      }
+      text{
+        // 多行文本溢出
+        font-size: 26rpx;
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
+    }
+  }
+}
+
+
+// 排行榜区域
+.toplist{
+  padding: 20rpx;
+  .topListSwiper{
+    height: 430rpx;
+    .swiperItem{
+      background:#ededed;
+      width: 97%;
+      .title{
+        height: 70rpx;
+        line-height: 70rpx;
+      }
+      .musicInfo{
+        height: 100rpx;
+        // 当设置display：flex以后回自动将其子元素变成block
+        display: flex;
+        margin-bottom: 20rpx;
+        image{
+          height: 100rpx;
+          width: 100rpx;
+          border-radius: 10rpx;
+        }
+        .count{
+          width: 100rpx;
+          height: 100rpx;
+          text-align: center;
+          line-height: 100rpx;
+        }
+        .musicname{
+          line-height: 100rpx;
+         /*  max-width: 400rpx;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis; */
+        }
+      }
+    }
+  }
+}
